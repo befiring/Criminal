@@ -3,6 +3,7 @@ package com.example.criminalintent;
 import java.util.ArrayList;
 import java.util.UUID;
 
+import android.R.integer;
 import android.content.Context;
 
 public class Crimelab {
@@ -15,6 +16,13 @@ public class Crimelab {
 	{
 		this.mAppContext=appContext;
 		mCrimes=new ArrayList<Crime>();
+		for(int i=0;i<100;i++)
+		{
+			Crime c=new Crime();
+			c.setTittle("Crime #"+i);
+			c.setSolved(i%2==0);
+			mCrimes.add(c);
+		}
 	}
 	
 	public ArrayList<Crime> getCrimes()
@@ -32,7 +40,7 @@ public class Crimelab {
 		return null;
 	}
 	
-	private static Crimelab get(Context c)
+	public static Crimelab get(Context c)
 	{
 		if(sCrimelab==null)
 		{

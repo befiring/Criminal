@@ -1195,7 +1195,7 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int activity_crime=0x7f030018;
+        public static final int activity_fragment=0x7f030018;
         public static final int fragment_crime=0x7f030019;
         public static final int support_simple_spinner_dropdown_item=0x7f03001a;
     }
@@ -1245,6 +1245,7 @@ containing a value of this type.
         public static final int crime_solved_label=0x7f0a0011;
         public static final int crime_tittle_hint=0x7f0a000e;
         public static final int crime_tittle_label=0x7f0a000f;
+        public static final int crimes_tittle=0x7f0a0012;
     }
     public static final class style {
         /** 
