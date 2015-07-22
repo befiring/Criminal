@@ -1,5 +1,7 @@
 package com.example.criminalintent;
 
+import java.util.UUID;
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -10,7 +12,8 @@ public class CrimeActivity extends SingleFragmentActivity {
 	@Override
 	protected Fragment createFragment() {
 		// TODO Auto-generated method stub
-		return new CrimeListFragment();
+		UUID crimeId=(UUID)getIntent().getSerializableExtra(CrimeFragment.EXTRA_CRIME_ID);
+		return CrimeFragment.newInstance(crimeId);
 	}
 
 	
