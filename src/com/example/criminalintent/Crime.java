@@ -5,6 +5,11 @@ import java.util.UUID;
 
 public class Crime {
 
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return mTittle;
+	}
 	private UUID mId;
 	private String mTittle;
 	private Date mDate;
@@ -34,4 +39,5 @@ public class Crime {
 	public UUID getId() {
 		return mId;
 	}
+	
 }
